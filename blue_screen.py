@@ -15,7 +15,19 @@ def main():
     foreground = SimpleImage('images/tiefighter.jpg')
     background = SimpleImage('images/quad.jpg')
     # TODO: your code here
-    background.show()
+    #background.show()
+    foreground.show()
+    darker(foreground)
+    foreground.show()
+    print(foreground.width)
+    print(foreground.height)
+
+
+
+def darker(image):
+    for pixel in image:
+        pixel.blue = pixel.blue
+
 
 
 if __name__ == '__main__':
