@@ -13,6 +13,22 @@ def main():
     print(ages)
 
 
+    for key in ages.keys():
+        print(str(key) + "-> " + str(ages[key]))
+
+    for key in ages:
+        print(key + "-> " + str(ages[key]))
+
+    for value in ages.values():
+        print(value)
+
+#removing elements
+    ages.pop('Chris')
+    print(ages)
+
+    ages.clear()
+    print(ages)
+
 
 
 
